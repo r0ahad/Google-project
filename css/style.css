@@ -1,0 +1,139 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(133, 85, 85);
+}
+/* header start here */
+header{
+    width: 100%;
+    margin: 25px 0 0 0;
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    justify-content: right;margin-right: 25px;
+}
+header ul li{
+    margin-left: 25px;
+    font-size:16px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header ul li a{
+    color: #fff;
+}
+/* header end here */
+/* content :start */
+.main-content{
+    width: 100%;
+     margin: 150px 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;align-items: center;
+}
+.content{
+    width: 600px;
+     margin: 50px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;align-items: center;
+}
+.icons ul{
+    list-style: none;display: flex;
+}
+.icons ul li{
+    color: rgb(238, 10, 10);
+    margin: 25px 0 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(92, 82, 82, 0.712);
+    border-radius: 100%;
+    transition: all linear 0.3s;
+    
+}
+.icons ul li:hover{
+    background-color: #fff;
+}
+.searchbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.search{
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 1px solid rgba(121, 110, 110, 0.61);
+}
+.search-icons{
+    display: flex;
+    position: absolute;
+    margin-left: 5px;
+    width: 525px;
+    justify-content: space-between;
+    align-items: center;
+}
+.ser-icon-1, .ser-icon-2{
+    width: 20px;    
+}
+/* content end */
+/* bottom :start */
+.bottom-main{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 25px;
+    padding: 0 50px;
+}
+.google-red a{
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13pt;
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 11px;
+    border-radius: 30px;
+    transition: all linear 0.3s;
+}
+.google-red a:hover{
+    background-color: #ffffff21;
+}
+.edit a{
+    background-color: rgba(0, 0, 0, 0.26);
+    color: #ffffff93;
+    padding: 10px;
+    border-radius: 50px;
+}
+.edit a:hover{
+    background-color: rgba(0, 0, 0, 0.404);
+}
+/* bottom :end */
+
+
+/* mobile view */
+@media (max-width:750px){
+    .search{
+        width: 63%;
+    }
+    .search-icons{
+        width: 55%;
+    }
+    .bottom-main{
+        width: 76%;
+        padding: 0 10px;
+    }
+    header{
+        width: 83%;
+    }
+}
